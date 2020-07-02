@@ -1,6 +1,5 @@
 package com.fxc;
 
-import jdk.jfr.StackTrace;
 
 import java.io.IOException;
 import java.net.*;
@@ -8,7 +7,7 @@ import java.net.*;
 public class MulticastPublisherThread implements Runnable{
 
     private String userNickname = null;
-    private volatile int randNumber=(int)(Math.random() * ((5000 - 1000) + 1)) + 1000;
+    private volatile int randNumber=(int)(Math.random() * ((45000 - 40000) + 1)) + 40000;
 
     public MulticastPublisherThread(String userNickname){
         this.userNickname = userNickname;

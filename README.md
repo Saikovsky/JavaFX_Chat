@@ -13,7 +13,7 @@ Requires:
  Application doesn't require main server as every server is built within application so
  every user acts also as server.
  
-## How to use
+## How to use (Tested on Windows 10)
 
 Set up properly JAVA_HOME for JDK 11, then add PATHs to JavaFX jmods and SDK
 ```

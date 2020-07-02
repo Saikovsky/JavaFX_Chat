@@ -21,7 +21,7 @@ set PATH_TO_FX="path\to\javafx-sdk-14.0.1"
 set PATH_TO_FX_MODS="path\to\javafx-jmods-11.0.2"
 ```
 
-Download project in desired location and name it. (For example I used "JavaFX")
+Download project in desired location.
 
 Open folder with project compile it
 ```
@@ -30,12 +30,12 @@ dir /s /b src\*.java > sources.txt & javac --module-path %PATH_TO_FX% -d mods/ch
 
 To run it use
 ```
-java --module-path "%PATH_TO_FX%;mods" -m JavaFX/com.fxc.Main
+java --module-path "%PATH_TO_FX%;mods" -m JavaFX_Chat/com.fxc.Main
 ```
 
 To create custom runtime image
 ```
 jlink --module-path "%PATH_TO_FX_MODS%;mods" --add-modules JavaFX --output chat
-chat\bin\java -m JavaFX/com.fxc.Main
+chat\bin\java -m JavaFX_Chat/com.fxc.Main
 ```
 
